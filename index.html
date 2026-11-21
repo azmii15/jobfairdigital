@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edu Fair & Career Day 2026</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- COVER UNDANGAN -->
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <p class="subtitle">UNDANGAN RESMI</p>
+
+            <h1>
+                EDU FAIR
+                <span>& CAREER DAY 2026</span>
+            </h1>
+
+            <p class="theme">
+                Explore Your Future, Build Your Career
+            </p>
+
+            <div class="invitation-box">
+
+                <p>Kepada Yth.</p>
+
+                <!-- Nama penerima otomatis -->
+                <h2 id="namaTamu">
+                    Tamu Undangan
+                </h2>
+
+                <p id="kategoriTamu">
+                    Kategori Tamu
+                </p>
+
+                <p class="invitation-text">
+                    Dengan hormat, kami mengundang Anda
+                    untuk menghadiri acara Edu Fair &
+                    Career Day 2026.
+                </p>
+
+                <button onclick="bukaUndangan()">
+                    Buka Undangan
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- KONTEN UTAMA -->
+    <main id="isiUndangan">
+
+        <!-- INFORMASI ACARA -->
+        <section class="section">
+
+            <p class="section-label">SAVE THE DATE</p>
+
+            <h2>Edu Fair & Career Day 2026</h2>
+
+            <p>
+                Sebuah kegiatan yang mempertemukan
+                dunia pendidikan, universitas,
+                perusahaan, dan generasi muda
+                untuk mengenal peluang masa depan.
+            </p>
+
+            <div class="event-info">
+
+                <div class="info-card">
+                    <h3>Tanggal</h3>
+                    <p>12 Desember 2026</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Waktu</h3>
+                    <p>08.00 - 16.00 WIB</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Lokasi</h3>
+                    <p>SMK Kotangsel</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RUNDOWN -->
+        <section class="section rundown">
+
+            <p class="section-label">JADWAL KEGIATAN</p>
+
+            <h2>Rundown Acara</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>08.00 - 08.30</span>
+                    <h3>Registrasi Peserta</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>08.30 - 09.00</span>
+                    <h3>Pembukaan Acara</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>09.00 - 10.00</span>
+                    <h3>Seminar Pendidikan</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>10.00 - 12.00</span>
+                    <h3>University & Company Expo</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>13.00 - 15.30</span>
+                    <h3>Career Talk & Sharing Alumni</h3>
+                </div>
+
+                <div class="timeline-item">
+                    <span>15.30 - 16.00</span>
+                    <h3>Penutupan</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFIT BOOTH -->
+        <section class="section">
+
+            <p class="section-label">KEUNTUNGAN</p>
+
+            <h2>Benefit Booth</h2>
+
+            <div class="benefit-container">
+
+                <div class="benefit-card">
+                    <h3>01</h3>
+                    <p>Promosi dan Branding Instansi</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>02</h3>
+                    <p>Interaksi Langsung dengan Peserta</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>03</h3>
+                    <p>Networking dan Kerja Sama</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>04</h3>
+                    <p>Kesempatan Mendapatkan Talenta Baru</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOKASI -->
+        <section class="section">
+
+            <p class="section-label">LOKASI ACARA</p>
+
+            <h2>Temukan Lokasi Kami</h2>
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=SMK+Kotangsel&output=embed"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- RSVP -->
+        <section class="section rsvp">
+
+            <p class="section-label">KONFIRMASI KEHADIRAN</p>
+
+            <h2>RSVP</h2>
+
+            <p>
+                Mohon konfirmasikan kehadiran Anda
+                melalui formulir berikut.
+            </p>
+
+            <form id="formRSVP">
+
+                <input
+                    type="text"
+                    id="namaRSVP"
+                    placeholder="Nama Anda"
+                    required>
+
+                <input
+                    type="text"
+                    id="instansiRSVP"
+                    placeholder="Nama Instansi"
+                    required>
+
+                <select id="kehadiran" required>
+                    <option value="">Pilih Kehadiran</option>
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                </select>
+
+                <button type="submit">
+                    Kirim Konfirmasi
+                </button>
+
+            </form>
+
+            <p id="hasilRSVP"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>EDU FAIR & CAREER DAY 2026</h3>
+        <p>Explore Your Future, Build Your Career</p>
+        <p>&copy; 2026 Panitia Edu Fair</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin - Edu Fair 2026</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <!-- Library PapaParse untuk membaca CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h1>EDU FAIR 2026</h1>
+            <p>Admin Dashboard</p>
+        </div>
+
+        <a href="index.html" target="_blank">
+            Lihat Undangan
+        </a>
+    </header>
+
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Manajemen Data Tamu</h2>
+            <p>
+                Upload data tamu untuk membuat
+                undangan digital secara otomatis.
+            </p>
+        </section>
+
+
+        <!-- UPLOAD CSV -->
+        <section class="upload-card">
+
+            <h3>Upload Data Tamu</h3>
+
+            <p>Pilih file data-tamu.csv</p>
+
+            <input
+                type="file"
+                id="fileCSV"
+                accept=".csv,text/csv">
+
+            <button id="btnUpload">
+                Upload CSV
+            </button>
+
+            <p id="statusUpload"></p>
+
+        </section>
+
+
+        <!-- STATISTIK -->
+        <section class="statistics">
+
+            <div class="stat-card">
+                <h3 id="totalTamu">0</h3>
+                <p>Total Tamu</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="totalKampus">0</h3>
+                <p>Universitas</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="totalPerusahaan">0</h3>
+                <p>Perusahaan</p>
+            </div>
+
+        </section>
+
+
+        <!-- TABEL TAMU -->
+        <section class="table-card">
+
+            <h2>Daftar Tamu Undangan</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama Tamu</th>
+                            <th>Instansi</th>
+                            <th>Kategori</th>
+                            <th>WhatsApp</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelTamu">
+
+                        <tr>
+                            <td colspan="6">
+                                Silakan upload file CSV terlebih dahulu.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            &copy; 2026 Edu Fair & Career Day
+        </p>
+    </footer>
+
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
