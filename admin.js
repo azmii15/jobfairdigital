@@ -175,18 +175,20 @@ function tampilkanTamu() {
 // 4. MEMBUAT LINK UNDANGAN PERSONAL
 // ====================================
 
-function buatLink(tamu) {
 
-    // Mengambil alamat halaman index.html
+
+function buatLink(tamu) {
     const url = new URL("index.html", window.location.href);
 
-    // Mengisi parameter URL
-    url.searchParams.set("to", tamu.instansi);
+    url.searchParams.set("to", tamu.nama_tamu);
+    url.searchParams.set("instansi", tamu.instansi);
     url.searchParams.set("kategori", tamu.kategori);
 
     return url.href;
-
 }
+
+
+
 
 
 // ====================================

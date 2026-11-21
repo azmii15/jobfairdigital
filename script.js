@@ -4,15 +4,22 @@
 ================================= */
 
 // Membaca parameter URL
+
 const urlParams = new URLSearchParams(window.location.search);
 
-// Mengambil nama dan kategori dari URL
 const namaTamu = urlParams.get("to");
+const instansiTamu = urlParams.get("instansi");
 const kategoriTamu = urlParams.get("kategori");
 
-// Mengambil elemen HTML
-const elemenNama = document.getElementById("namaTamu");
-const elemenKategori = document.getElementById("kategoriTamu");
+document.getElementById("namaTamu").textContent =
+    namaTamu || "Tamu Undangan";
+
+document.getElementById("instansiTamu").textContent =
+    instansiTamu || "";
+
+document.getElementById("kategoriTamu").textContent =
+    kategoriTamu || "Undangan Umum";
+
 
 // Menampilkan nama tamu
 if (namaTamu) {
